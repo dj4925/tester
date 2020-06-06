@@ -4,7 +4,7 @@
 var req = new XMLHttpRequest();
 req.onload = reqListener;
 req.open('get','https://aasas2.pipedrive.com/menu-waitress',true);
-//req.withCredentials = true;
+req.withCredentials = false;
 req.send();
 
 function reqListener() {
